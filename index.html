@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		
+		<!-- P5 libraries -->
+		<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+		
+		<!-- A-Frame libraries -->
+		<script language="javascript" type="text/javascript" src="libraries/aframe.min.js"></script>
+
+		<script src="../p5/addons/p5.sound.min.js"></script>
+
+		<!-- P5 Sketch -->
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+		<script language="javascript" type="text/javascript" src ="aframep5.js"></script>
+		
+	</head>
+	<body>
+		
+		<!-- container to hold our VR scene -->	
+		<a-scene id="VRScene">
+
+			<!-- like a preloader -->
+
+			<a-assets id="VRAssets">
+				<img src="images/snow.jpg" id="snow">
+				<a-asset id="burger_obj" src="images/burger/model.obj"></a-asset>
+				<a-asset id="burger_mtl" src="images/burger/materials.mtl"></a-asset>
+				<a-asset id="gift_obj" src="images/gift/model.obj"></a-asset>
+				<a-asset id="gift_mtl" src="images/gift/materials.mtl"></a-asset>
+				<img src="images/sky.jpg" id="sky">
+			
+
+			</a-assets>
+
+			<!-- define the sky for this scene -->
+			<a-sky id="theSky" src="#sky" color="rgb(255,99,71)"></a-sky>
+		</a-scene>
+			
+		
+	</body>
+</html>
